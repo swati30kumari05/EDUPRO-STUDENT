@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduPro — Student Skill Accelerator</title>
+
+  <!-- main stylesheet in same folder -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <!-- logo image from images/logo.svg -->
+      <a class="logo" href="#home">
+        <img src="images/logo.jpg" alt="EduPro logo" class="logo-img">
+        <span class="logo-text">Edu<span>Pro</span></span>
+      </a>
+
+      <!-- NO-JS Burger (checkbox hack) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#program">Program</a>
+        <a href="#contact" class="nav-cta">Enroll</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <h1>Upgrade your skills in 30 days.</h1>
+        <p>
+          EduPro is a practical learning program for students: responsive web,
+          communication, and project readiness — all guided in a structured way.
+        </p>
+
+        <!-- Inline CSS requirement (ONLY this button) -->
+        <a href="#contact" class="btn btn-primary" style="letter-spacing: 0.5px;">
+          Start Free Demo
+        </a>
+
+        <div class="hero-meta">
+          <div class="meta-box">
+            <strong>1 hour/day</strong>
+            <span>Student-friendly plan</span>
+          </div>
+          <div class="meta-box">
+            <strong>Certificates</strong>
+            <span>For completed tasks</span>
+          </div>
+          <div class="meta-box">
+            <strong>Mentor Help</strong>
+            <span>Weekly review</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- right hero card replaced with actual hero image -->
+      <aside class="hero-media">
+        <img src="images/hero.jpg" alt="Students learning with EduPro" class="hero-img">
+        <div class="hero-badge">No JS required</div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+      <p class="section-subtitle">Simple, professional, and classroom-ready.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Responsive Layout</h3>
+          <p>Build with media queries and flexible grids.</p>
+        </article>
+        <article class="card">
+          <h3>Clean UI System</h3>
+          <p>Reusable buttons, cards, and typography styles.</p>
+        </article>
+        <article class="card">
+          <h3>Form Styling</h3>
+          <p>Accessible form fields and a professional submit flow.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section id="program" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Program Outline</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Week 1</h3>
+          <p>HTML structure, semantic layout, and basic styling.</p>
+        </div>
+        <div class="card">
+          <h3>Week 2</h3>
+          <p>Responsive design, navbar, and media query patterns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Form -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Enroll / Contact</h2>
+      <p class="section-subtitle">Fill the form and we’ll contact you.</p>
+
+      <form class="form" action="#" method="post">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="role">Role</label>
+          <select id="role" name="role" required>
+            <option value="" selected disabled>Select your role</option>
+            <option>Student</option>
+            <option>Faculty</option>
+            <option>Parent</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" required />
+          <span>I agree to the terms and contact policy.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p class="form-note">
+          Tip: The primary button color uses <code>!important</code> to stay consistent.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 EduPro. Classroom practice task.</p>
+      <p class="muted">Made with HTML + CSS (no JS).</p>
+    </div>
+  </footer>
+
+</body>
+</html>
