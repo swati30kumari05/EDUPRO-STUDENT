@@ -33,7 +33,7 @@ No external JavaScript or CSS frameworks are used; the page works fully offline 
 
 Folder Structure
 text
-EDUPRO-STUDENT/
+EDUPRO-STUDENT
 │
 ├─ index.html
 ├─ style.css
